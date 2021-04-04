@@ -13,6 +13,9 @@
   .eisenhower-matrix .eisenhower-matrix-img {
     width: 100%;
   }
+  input{
+      padding: 0px;
+  }
   .eisenhower-matrix .more-inf {
     font-family: fantasy, cursive;
   }
@@ -143,11 +146,11 @@
     display: none;
   }
   
-  .task-list .task-list-element.editmode .input-default[type=text] {
+  .task-list .task-list-element.edit-mode .input-default[type=text] {
     display: inline-block;
     width: 224px;
   }
   
-  .task-list .task-list-element.editmode .label-default {
+  .task-list .task-list-element.edit-mode .label-default {
     display: none;
   }
