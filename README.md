@@ -1,2 +1,2 @@
 # clean-code
-https://github.com/marynachubrei/clean-code/
+https://github.com/marynachubrei.github.io/clean-code/
