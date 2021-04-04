@@ -22,7 +22,7 @@
   .eisenhower-matrix { 
     text-align: center;
   }
-  
+
 }
 .main-page-element {
   display: block;
@@ -38,14 +38,14 @@
   display: flex;
 }
 .task-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .task-list-element, .title {
-  list-style:none;
+  list-style: none;
 }
 .input-default,.button-default{
-  outline:none;
+  outline: none;
 }
 .button-default {
   background: none;
@@ -138,14 +138,14 @@
 
 /* Edit Task */
 .task-list .task-list-element .input-default[type=text] {
-  display:none
+  display: none
 }
 
 .task-list .task-list-element.editmode .input-default[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task-list .task-list-element.editmode .label-default {
-  display:none;
+  display: none;
 }
