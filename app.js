@@ -21,8 +21,8 @@ var createNewTaskElement=function(taskString){
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
-    //p
-    var p=document.createElement("p");//p
+    //label
+    var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
     //button.edit
@@ -32,10 +32,10 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className="task-list_element"
+    listItem.className="task-list-element"
 
-    p.innerText=taskString;
-    p.className="p-default task";
+    label.innerText=taskString;
+    label.className="label-default task";
 
     checkBox.className="input-default"
 
@@ -51,13 +51,12 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.src="./remove.svg";
     deleteButtonImg.className="icon-img"
     deleteButton.appendChild(deleteButtonImg);
-    deleteButtonImg.alt="";
 
 
     //and appending.
  
     listItem.appendChild(checkBox);
-    listItem.appendChild(p);
+    listItem.appendChild(label);
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
@@ -90,18 +89,18 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector("input[type=text]");
-    var p=listItem.querySelector("p");
+    var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("editmode");
     //If class of the parent is .editmode
     if(containsClass){
 
         //switch to .editmode
-        //p becomes the inputs value.
-        p.innerText=editInput.value;
+        //label becomes the inputs value.
+        label.innerText=editInput.value;
         editBtn.innerText="Edit";
     }else{
-        editInput.value=p.innerText;
+        editInput.value=label.innerText;
         editBtn.innerText="Save";
     }
 

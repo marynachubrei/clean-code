@@ -7,49 +7,51 @@
   </head>
   <body class="main-block">
     <div class="eisenhower-matrix">
-      <img class="eisenhower-matrix-img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <img class="eisenhower-matrix-img" src="./eisenhower-matrix.jpg" alt="">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="main-page-element">
-      <p id="section-for-element_list">
-        <label class="p-default" for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task input-default" type="text">
-          <button class="button-default">Add</button>
-        </div>
-      </p>
-      <h3 class="title">Todo</h3>
-      <ul class="task-list" id="incomplete-tasks">
-        <li class="task-list_element">
-          <input class="input-default" type="checkbox">
-          <p class="p-default task">Pay Bills</p>
-          <input type="text" class="input-default task">
-          <button class="button-default edit">Edit</button>
-          <button class="button-default delete">
-            <img class="icon-img" src="./remove.svg" alt="">
-          </button>
-        </li>
-        <li class="task-list_element editmode">
-          <input class="input-default" type="checkbox">
-          <p class="p-default task">Go Shopping</p>
-          <input type="text" value="Go Shopping" class=" input-default task">
-          <button class="button-default edit">Save</button>
-          <button class="button-default delete">
-            <img class="icon-img" src="./remove.svg" alt="">
-          </button>
-        </li>
-      </ul>
-      <h3 class="title">Completed</h3>
-      <ul class="task-list" id="completed-tasks">
-        <li class="task-list_element"><input class="input-default" type="checkbox" checked>
-          <p class="p-default task">See the Doctor</p>
-          <input type="text" class="input-default">
-          <button class="button-default edit">Edit</button>
-          <button class="button-default delete">
-            <img class="icon-img" src="./remove.svg" alt="">
-          </button>
-        </li>
-      </ul>
+    <div class="section">
+      <div class="main-page-element">
+        <p id="section-for-element-list">
+          <label class="label-default" for="new-task">Add Item</label>
+          <div class="task-row-wrapper">
+            <input id="new-task"class="task input-default" type="text">
+            <button class="button-default">Add</button>
+          </div>
+        </p>
+        <h3 class="title">Todo</h3>
+        <ul class="task-list" id="incomplete-tasks">
+          <li class="task-list-element">
+            <input class="input-default" type="checkbox">
+            <label class="label-default task">Pay Bills</label>
+            <input type="text" class="input-default task">
+            <button class="button-default edit">Edit</button>
+            <button class="button-default delete">
+              <img class="icon-img" src="./remove.svg" alt="">
+            </button>
+          </li>
+          <li class="task-list-element editmode">
+            <input class="input-default" type="checkbox">
+            <label class="label-default task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class=" input-default task">
+            <button class="button-default edit">Save</button>
+            <button class="button-default delete">
+              <img class="icon-img" src="./remove.svg" alt="">
+            </button>
+          </li>
+        </ul>
+        <h3 class="title">Completed</h3>
+        <ul class="task-list" id="completed-tasks">
+          <li class="task-list-element"><input class="input-default" type="checkbox" checked>
+            <label class="label-default task">See the Doctor</label>
+            <input type="text" class="input-default">
+            <button class="button-default edit">Edit</button>
+            <button class="button-default delete">
+              <img class="icon-img" src="./remove.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
