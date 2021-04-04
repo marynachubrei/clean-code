@@ -41,10 +41,12 @@
   margin: 0;
   padding: 0px;
 }
-.task-list-element, .title {
+.task-list-element, 
+.title {
   list-style: none;
 }
-.input-default,.button-default{
+.input-default,
+.button-default{
   outline: none;
 }
 .button-default {
