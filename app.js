@@ -32,7 +32,7 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className="task-list-element"
+    listItem.className="task-list_element"
 
     p.innerText=taskString;
     p.className="p-default task";
